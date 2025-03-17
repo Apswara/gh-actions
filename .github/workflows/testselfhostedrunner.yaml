@@ -1,0 +1,12 @@
+name: testselfhostedrunner
+on:
+  push:
+    branches:
+    - main
+jobs:
+  hello:
+    name: print_hello
+    runs-on: self-hosted
+    steps:
+    - name: say hell to all
+      run: echo "Hello World!"
